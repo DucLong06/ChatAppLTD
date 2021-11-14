@@ -1,0 +1,21 @@
+Lắng nghe người khác gửi đến
+ws://localhost:5411/chat/socket.io/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MzYxMzAwNTIsImlhdCI6MTYzNjEyOTE1Miwic3ViIjoiNjE4NTUxNzkyOTBkOWUzMjk0Y2RkYjMzIn0.43vC1juRONTFNUHLjLOF--C_ktA6K6QyulhbdaqN7C4&EIO=3&transport=websocket&sid=6N32cWwZZVbQaK3uAAAX
+0: "res-add-new-contact"
+1: {message: "Long Hoàng wants to add you to the contacts", firstname: "Hoàng", lastname: "Long",…}
+firstname: "Hoàng"
+id: "61816b856abfcd1cfcc9c9db"
+lastname: "Long"
+message: "Long Hoàng wants to add you to the contacts"
+
+
+bật đang nhập
+42["typing-on",{"info":{"id":"618e7a20ea53b33bd8c19579","firstname":"Thái","lastname":"Lê","createdAt":"2021-11-12T14:28:48.810Z","email":"thaipho@gmail.com"},"receiver":{"firstname":"Hoàng","lastname":"Long","id":"61854df7290d9e3294cddb23"},"conversationType":"User"}]
+
+tắt đang nhập
+42["typing-off",{"info":{"id":"618e7a20ea53b33bd8c19579","firstname":"Thái","lastname":"Lê","createdAt":"2021-11-12T14:28:48.810Z","email":"thaipho@gmail.com"},"receiver":{"firstname":"Hoàng","lastname":"Long","id":"61854df7290d9e3294cddb23"},"conversationType":"User"}]
+
+gửi tin nhắn
+42["sent-message",{"id":"618e7eb879dab22e24ec365b","sender":{"_id":"618e7a20ea53b33bd8c19579","firstname":"Thái","lastname":"Lê"},"receiver":{"_id":"61854df7290d9e3294cddb23","firstname":"Hoàng","lastname":"Long"},"createdAt":"2021-11-12T14:48:24.433Z","message":"hello","images":[],"type":"text","conversationType":"User","files":[]}]
+
+res-sent-message
+42["res-sent-message",{"id":"618e7eb879dab22e24ec365b","sender":{"_id":"618e7a20ea53b33bd8c19579","firstname":"Thái","lastname":"Lê"},"receiver":{"_id":"61854df7290d9e3294cddb23","firstname":"Hoàng","lastname":"Long"},"createdAt":"2021-11-12T14:48:24.433Z","message":"hello","images":[],"type":"text","conversationType":"User","files":[]}]

@@ -1,0 +1,5 @@
+<script src="https://cdn.socket.io/4.3.2/socket.io.min.js" integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs" crossorigin="anonymous"></script>
+<script>
+     const socket = io('http://localhost:5411',{'query':'token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MzYzMzgwODMsImlhdCI6MTYzNjI3ODA4Mywic3ViIjoiNjE4MTZiODU2YWJmY2QxY2ZjYzljOWRiIn0.5l44MQEaE4P5gb4h7JrBHJYtAxs8kLOQ9KHsS8fmM08','transport': 'websocket'});
+     socket.on('connect', (socket) => console.log(socket))
+</script>
