@@ -70,10 +70,7 @@ const EnumDevicesModal = ({ visible, toggle }) => {
     }
     
     useEffect(() => {
-        navigator.mediaDevices
-            .enumerateDevices()
-            .then(gotDevices)
-            .catch((err) => console.log(err));
+        
     }, [])
     return (
         <Modal visible={visible} onCancel={toggle} title="Settings" onOk={onOk}>

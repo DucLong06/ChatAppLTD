@@ -96,10 +96,10 @@ export const onCallerAnwserCall = async(payload) => {
         payload: payload,
     });
     try{
-        stream = await navigator.mediaDevices.getUserMedia({
-            video: true,
-            audio: true,
-        });
+        // stream = await navigator.mediaDevices.getUserMedia({
+        //     video: true,
+        //     audio: true,
+        // });
         let call = peer.call(payload.peerId, stream);
         getStore().dispatch({
             type: constants.CALL_LOCAL_STREAM,
@@ -128,10 +128,10 @@ export const onListenerAnwserCall = (payload) => {
   
     peer.on("call", async function (call) {
         try {
-            stream = await navigator.mediaDevices.getUserMedia({
-                video: true,
-                audio: true,
-            });
+            // stream = await navigator.mediaDevices.getUserMedia({
+            //     video: true,
+            //     audio: true,
+            // });
             getStore().dispatch({
                 type: constants.CALL_LOCAL_STREAM,
                 payload: stream,

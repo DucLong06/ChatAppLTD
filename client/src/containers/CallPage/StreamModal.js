@@ -52,10 +52,6 @@ const StreamModal = () => {
         // Handles being called several times to update labels. Preserve values.
         console.log(deviceInfos)
     };
-    navigator.mediaDevices
-        .enumerateDevices()
-        .then(gotDevices)
-        .catch((err) => console.log(err));
 
     return (
         <>
